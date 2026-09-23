@@ -11,14 +11,6 @@
 #include <dt-bindings/anti_idle_mode.h>
 
 / {
-    
-    anti_idle {
-    compatible = "zmk,anti-idle-generic";
-    interval-ms = <30000>;
-    bindings = <&mmv MOVE_X(1)>, <&mmv MOVE_X(-1)>;
-    tap_ms = <40>;
-    wait_ms = <200>;
-};
 
 
     keymap {
