@@ -27,14 +27,14 @@
 // ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                 ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
     &kp LALT   &kp Z     &kp X     &kp C     &kp V     &kp B                        &kp N     &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp NUBS
 // ├─────────┼─────────┼─────────┼─────────╮                                                         ╭─────────┼─────────┼─────────┼─────────┤
-    &trans &kp C_PP &kp BSPC  &mo 1                                                             &kp C_PREV &kp C_NEXT &kp LBKT  &kp RBKT
+    &aim AIM_TOG &kp C_PP &kp BSPC  &mo 1                                                             &kp C_PREV &kp C_NEXT &kp LBKT  &kp RBKT
 // ╰─────────┴─────────┴─────────┴─────────╯                                                         ╰─────────┴─────────┴─────────┴─────────╯
 //                                         ╭─────────┬─────────╮ ╭─────────┬─────────╮
-                                             &kp LGUI  &kp DEL      &kp F5    &kp F4
+                                             &kp SPACE  &kp LSHFT      &kp RET    &kp SPACE
 //                                         ├─────────┼─────────┤ ├─────────┼─────────┤
-                                             &kp SPACE &kp LSHFT  &kp RET   &kp PG_DN
+                                             &kp RET    &kp LGUI  &kp F5    &kp F4
 //                                         ├─────────┼─────────┤ ├─────────┼─────────┤
-                                             &kp RET   &kp ESC    &kp PG_UP &kp SPACE
+                                             &kp DEL   &kp ESC    &kp PG_UP &kp PG_DN
 //                                         ╰─────────┴─────────╯ ╰─────────┴─────────╯
             >;
         };
