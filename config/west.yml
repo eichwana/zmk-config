@@ -12,12 +12,3 @@ manifest:
       
   self:
     path: config
-
-manifest:
-  remotes:
-    - name: kbrd-space
-      url-base: https://github.com/kbrd-space
-  projects:
-    - name: zmk-anti-idle
-      remote: kbrd-space
-      revision: main
