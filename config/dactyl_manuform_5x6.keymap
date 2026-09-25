@@ -2,9 +2,20 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <behaviors/anti_idle_mode.dtsi>
+#include <dt-bindings/anti_idle_mode.h>
 
 
 / {
+
+    
+    anti_idle {
+        compatible = "zmk,anti-idle-generic";
+        interval-ms = <60000>; // How often to send actions (ms)
+        bindings = <&mmv MOVE_DOWN &mmv MOVE_UP>; // Actions to perform (e.g., mouse move)
+        tap_ms = <40>;   // Duration of each action (ms)
+        wait_ms = <200>; // Delay between actions (ms)
+    };
 
 
     keymap {
@@ -22,7 +33,7 @@
 // ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                 ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
     &kp LALT   &kp Z     &kp X     &kp C     &kp V     &kp B                        &kp N     &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp NUBS
 // ├─────────┼─────────┼─────────┼─────────╮                                                         ╭─────────┼─────────┼─────────┼─────────┤
-    &trans &kp C_PP &kp BSPC  &mo 1                                                             &kp C_PREV &kp C_NEXT &kp LBKT  &kp RBKT
+    &aim AIM_TOG &kp C_PP &kp BSPC  &mo 1                                                             &kp C_PREV &kp C_NEXT &kp LBKT  &kp RBKT
 // ╰─────────┴─────────┴─────────┴─────────╯                                                         ╰─────────┴─────────┴─────────┴─────────╯
 //                                         ╭─────────┬─────────╮ ╭─────────┬─────────╮
                                              &kp SPACE  &kp LSHFT      &kp RET    &kp SPACE
