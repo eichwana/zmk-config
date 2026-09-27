@@ -27,7 +27,7 @@
 // ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                 ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
     &kp LALT   &kp Z     &kp X     &kp C     &kp V     &kp B                        &kp N     &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp NUBS
 // ├─────────┼─────────┼─────────┼─────────╮                                                         ╭─────────┼─────────┼─────────┼─────────┤
-    &aim AIM_TOG &kp C_PP &kp BSPC  &mo 1                                                             &kp C_PREV &kp C_NEXT &kp LBKT  &kp RBKT
+    &kp C_PP &trans &kp BSPC  &mo 1                                                             &kp C_PREV &kp C_NEXT &kp LBKT  &kp RBKT
 // ╰─────────┴─────────┴─────────┴─────────╯                                                         ╰─────────┴─────────┴─────────┴─────────╯
 //                                         ╭─────────┬─────────╮ ╭─────────┬─────────╮
                                              &kp SPACE  &kp LSHFT      &kp RET    &kp SPACE
@@ -54,11 +54,11 @@
     &trans     &trans    &trans    &trans                                                              &trans    &trans    &trans    &trans
 // ╰─────────┴─────────┴─────────┴─────────╯                                                         ╰─────────┴─────────┴─────────┴─────────╯
 //                                         ╭─────────┬─────────╮ ╭─────────┬─────────╮
-                                             &trans    &trans       &trans    &trans
+                                             &trans    &trans       &kp EQUAL   &trans
 //                                         ├─────────┼─────────┤ ├─────────┼─────────┤
-                                             &bt BT_CLR  &trans    &kp EQUAL  &kp END
+                                             &bt BT_CLR  &trans    &trans  &trans
 //                                         ├─────────┼─────────┤ ├─────────┼─────────┤
-                                             &trans    &trans      &kp HOME   &trans
+                                             &trans    &trans      &kp HOME   &KP END
 //                                         ╰─────────┴─────────╯ ╰─────────┴─────────╯
             >;
         };

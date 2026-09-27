@@ -53,11 +53,11 @@
     &trans     &trans    &trans    &trans                                                              &trans    &trans    &trans    &trans
 // ╰─────────┴─────────┴─────────┴─────────╯                                                         ╰─────────┴─────────┴─────────┴─────────╯
 //                                         ╭─────────┬─────────╮ ╭─────────┬─────────╮
-                                             &trans    &trans       &trans    &trans
+                                             &trans    &trans       &kp EQUAL   &trans
 //                                         ├─────────┼─────────┤ ├─────────┼─────────┤
-                                             &bt BT_CLR  &trans    &kp EQUAL  &kp END
+                                             &bt BT_CLR  &trans    &trans  &trans
 //                                         ├─────────┼─────────┤ ├─────────┼─────────┤
-                                             &trans    &trans      &kp HOME   &trans
+                                             &trans    &trans      &kp HOME   &KP END
 //                                         ╰─────────┴─────────╯ ╰─────────┴─────────╯
             >;
         };
